@@ -22,10 +22,8 @@ function initMap() {
             const marker = new google.maps.Marker({
               position: position,
               map: map,
-              title:town.name //Should adjust this to match your JSON structure
+              title:town.name 
             });
-          
-      
 
 // Call a function to add markers with pop-ups using JSON data
 

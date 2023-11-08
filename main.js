@@ -3,7 +3,7 @@ function initMap() {
   //Create a map centered around the UK
   const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 53.0, lng: -1.0},
-    zoom:6
+    zoom:5.4
   })
 
 //D3 program that consumes the feed

@@ -10,7 +10,7 @@ function initMap() {
   d3.json("http://34.38.72.236/Circles/Towns/50", function(data) {
       console.log(data);
   });
-
+  
 //Plot the towns from the JSON feed onto the map
   d3.json("http://34.38.72.236/Circles/Towns/50")
       .then(data => {
@@ -37,9 +37,10 @@ function initMap() {
         //title: Town.name
 
         // Create an info marker (Creates just one town)
-        //const infoWindow = new google.maps.InfoWindow({
-          //content: markerData.name
-        //});
+        // Addition of position changed info
+        const infoWindow = new google.maps.InfoWindow({
+          content: `<h2>${town.name}</h2><p>Population: ${town.population}</p>`
+        });
 
         marker.addListener("click", () => {
           infoWindow.open(map, marker);

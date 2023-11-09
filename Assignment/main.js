@@ -27,7 +27,7 @@ function initMap() {
               animation: google.maps.Animation.DROP             
             });
 
-// Call a function to add markers with pop-ups using JSON data
+// Call a function to add info markers using JSON data
 
 //fetch("http://34.38.72.236/Circles/Towns/50")
   //.then(response => response.json())
@@ -71,6 +71,5 @@ function initMap() {
       .catch(error => {
           console.error("Failed to load data:", error);
       });
-    }
+}
 
-    

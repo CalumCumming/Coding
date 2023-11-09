@@ -13,3 +13,16 @@
     border: 2px solid #ff0000; /* Red */
     border-radius: 5px;
   }
+
+.gm-style .gm-style-iw::before{
+  content:'';
+  position: absolute;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent rgba(106, 1, 227, 0.308)transparent;
+  display: block;
+  width: 1px;
+  margin-left: -10px;
+  bottom: -20px;
+  left: 50%;
+}

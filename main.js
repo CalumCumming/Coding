@@ -23,7 +23,8 @@ function initMap() {
             const marker = new google.maps.Marker({
               position: position,
               map: map,
-              title:town.name             
+              title:town.name,
+              animation: google.maps.Animation.BOUNCE             
             });
 
 // Call a function to add markers with pop-ups using JSON data

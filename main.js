@@ -65,7 +65,7 @@ function initMap() {
         })
       }
     })
-      
+
 
 // Catch error command
       .catch(error => {

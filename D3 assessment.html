@@ -16,18 +16,14 @@
   <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_F7ZjowJhO-DvAU06LHGCawWpfbrfoV8&callback=initMap" async defer></script>-->
 </head>
 <body> 
+
   <div id="map"></div>    
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkQidCzk2TiZ7__XBrwgN5IBd_cMmOA4&callback=initMap" async defer></script>
   <script src="main.js"></script>
   <!--<div id="map"></div>-->
   <button type="button", onclick="window.location.reload()">Refresh for New Towns</button>
-
-  <div id="sliderContainer">
-    <label for="mySlider">Slider:</label>
-    <input type="range" id="mySlider" min="0" max="100" value="50">
-    <p>Value: <span id="sliderValue">New Towns</span></p>
-  </div>
+  <input type="range" min="1" max="100" value="50" id="townSlider">
 
 </body>
 </html>

@@ -41,7 +41,7 @@ function initMap() {
         // Create an info marker (Creates just one town)
         // Addition of position changed info
         const infoWindow = new google.maps.InfoWindow({
-          content: `<h2>${town.name}</h2><p>Population: ${town.population}</p>`
+          content: `<h2>${town.Town}</h2><p>Population: ${town.Population}</p>`
         });
 
         marker.addListener("click", () => {
@@ -50,7 +50,7 @@ function initMap() {
       });      
     })
   
-//Ajax command
+//Ajax command (Doesn't add any new info to the map)
     $.ajax({
       url: 'http://34.38.72.236/Circles/Towns/50',
       method: 'GET',

@@ -6,6 +6,7 @@ function initMap() {
     zoom:5.6
   })
 
+
 //D3 program that consumes the feed
   d3.json("http://34.38.72.236/Circles/Towns/50", function(data) {
       console.log(data);
@@ -22,7 +23,7 @@ function initMap() {
             const marker = new google.maps.Marker({
               position: position,
               map: map,
-              title:town.name 
+              title:town.name             
             });
 
 // Call a function to add markers with pop-ups using JSON data
@@ -47,9 +48,23 @@ function initMap() {
         });
       });      
     })
+  
+//Ajax command
+    $.ajax({
+      url: 'http://34.38.72.236/Circles/Towns/50',
+      method: 'GET',
+      dataType: 'json',
+      success: function(data) {
+        $.each(data, function(index, place){
+          var marker = new google.maps.Marker({
+            position: {lat: place.lat, lng: place.lng},
+            map: map,
+            title: place.name,
+          })
+        })
+      }
+    })
       
-
-        
 
 // Catch error command
       .catch(error => {

@@ -15,7 +15,7 @@ function initMap() {
 //Plot the towns from the JSON feed onto the map
   d3.json("http://34.38.72.236/Circles/Towns/50")
       .then(data => {
-          //Assuming the JSON contains an array of town objects with lat and lng properties
+          //Assuming the JSON contains a list of towns with lat and lng properties
           data.forEach(town => {
             const position = {lat: town.lat, lng: town.lng };
 

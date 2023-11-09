@@ -24,7 +24,7 @@ function initMap() {
               position: position,
               map: map,
               title:town.name,
-              animation: google.maps.Animation.BOUNCE             
+              animation: google.maps.Animation.DROP             
             });
 
 // Call a function to add markers with pop-ups using JSON data
